@@ -323,6 +323,7 @@ def get_media_info(message):
 	save_json_to_file(media_info, file_path)
 	send_file_to_user(chat_id, file_path)
 
+
 if __name__ == "__main__":
 	bot.polling(none_stop=True, interval=0)
 

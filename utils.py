@@ -99,7 +99,7 @@ class RequetsWrapper:
 		if ((user_followers_1 == None) or (user_followers_2 == None)):
 			return None
 		common_followers = list(set(user_followers_1) & set(user_followers_2))
-		if (len(common_followers) > 100):
+		if (len(common_followers) > 50):
 			return None
 
 		common_followers_usernames = [self.bot.get_username_from_user_id(user_id) for user_id in common_followers]
