@@ -84,7 +84,7 @@ def choose_n_random_followers(message):
 		error_handler(chat_id, "incorrect_input_format")
 		return None
 
-	bot.send_message(chat_id, "запрос принят, обрабатывается, это может занять некоторое время")
+	bot.send_message(chat_id, "запрос принят, обрабатывается, это может занять некоторое время (вплоть до минуты)")
 
 	username = data[2]
 
@@ -195,7 +195,7 @@ def choose_n_random_commentators(message):
 
 	amount_of_comments = requestsWrapper.amount_of_comments(media_link)
 
-	bot.send_message(chat_id, "запрос принят, обрабатывается, это может занять некоторое время")
+	bot.send_message(chat_id, "запрос принят, обрабатывается, это может занять некоторое время (вплоть до минуты)")
 
 	if(amount_of_comments == None):
 		error_handler(chat_id, "invalid_post")
@@ -229,7 +229,7 @@ def common_followers(message):
 		error_handler(chat_id, "incorrect_input_format")
 		return None
 
-	bot.send_message(chat_id, "запрос принят, обрабатывается, это может занять некоторое время")
+	bot.send_message(chat_id, "запрос принят, обрабатывается, это может занять некоторое время (вплоть до минуты)")
 
 	username_1 = data[1]
 
