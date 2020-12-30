@@ -146,7 +146,7 @@ def choose_n_random_likers(message):
 
 	amount_of_likers = requestsWrapper.amount_of_likers(media_link)
 
-	bot.send_message(chat_id, "запрос принят, обрабатывается, это может занять некоторое время")
+	bot.send_message(chat_id, "запрос принят, обрабатывается, это может занять некоторое время (вплоть до минуты)")
 
 	if(amount_of_likers == None):
 		error_handler(chat_id, "invalid_post")
@@ -324,7 +324,6 @@ def get_media_info(message):
 	send_file_to_user(chat_id, file_path)
 
 
-if __name__ == "__main__":
-	bot.polling(none_stop=True, interval=0)
+bot.polling(none_stop=True, interval=0)
 
 
