@@ -324,6 +324,6 @@ def get_media_info(message):
 	send_file_to_user(chat_id, file_path)
 
 if __name__ == "__main__":
-	bot.infinity_polling(none_stop=True, interval=0)
+	polling(none_stop=True, interval=0)
 
 
